@@ -72,25 +72,14 @@ export default
     return(
       
       
-      <Grid sx={Application.box}>
-         <Box sx={{ maxWidth: 460, maxHeight:300,border:'3px solid gray'}}  >
-          <Paper
-            square
-            elevation={0}
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              height: 50,
-              pl: 2,
-              bgcolor: 'background.default',
-              
-            }}
+      <Grid 
           >
+             { /*Call-Label*/}
             <Typography>{steps[activeStep].label}</Typography>
-          </Paper>
-          <Box sx={{ height: 70, maxWidth: 400, width: '100%', p:2,}}>
+
+            { /*Call-Description*/}
             {steps[activeStep].description}
-          </Box>
+          
           <Grid>
     
             { /*Previous-Button*/}
@@ -106,7 +95,7 @@ export default
            <Button onClick={handleClose} sx={Application.text} variant="contained"  color="success" > end-tour </Button>
           
           </Grid>
-        </Box>
+       
         </Grid>
        
        
