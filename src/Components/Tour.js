@@ -73,7 +73,7 @@ export default
       
       
       <Grid sx={Application.box}>
-         <Box sx={{ maxWidth: 450, maxHeight:300,border:'3px solid gray'}}  >
+         <Box sx={{ maxWidth: 460, maxHeight:300,border:'3px solid gray'}}  >
           <Paper
             square
             elevation={0}
