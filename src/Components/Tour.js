@@ -71,7 +71,7 @@ export default
     return(
       
       
-      <Grid>
+      <Grid sx={Application.box}>
           
              { /*Call-Label*/}
              
@@ -84,7 +84,7 @@ export default
     
             { /*Previous-Button*/}
     
-          <Button variant="contained"  color="success" onClick={handleBack} sx={Application.text}> previous </Button>
+          <Button variant="contained"  color="success" onClick={handleBack} sx={Application.text} > previous </Button>
     
           {/* Next-Button */}
     
