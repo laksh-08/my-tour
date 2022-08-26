@@ -13,18 +13,20 @@ const handleClick=(event)=>{
     setAnchor(event.currentTarget);
 };
 const handleClose=()=>{
-    setAnchor(+ 1);
+    setAnchor(+1);
 }
 return(
 <div>
-    <Button  varient="contained" 
-     onClick={handleClick}>
-    </Button>
+<Button variant="contained"  color="success" onClick={handleClick}> Application-Tour </Button>
     <Menu anchor={anchor}
     open={open}
     onClose={handleClose}>
+
         <MenuItem onClick={handleClose}disableRipple>
-        <TextMobileStepper />
+
+            {/* Render Tour.js File*/}
+
+            <TextMobileStepper />
         </MenuItem>
     </Menu>
 </div>

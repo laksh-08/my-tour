@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -12,7 +11,7 @@ const steps = [
   //Tour-start
     {
         label:`Application-Tour`,
-        description:`Letsgo throughthe application in 7 steps`,
+        description:`Letsgo through the application in 7 steps`,
     },
   // Step-1
   {
@@ -47,7 +46,7 @@ description:'sell-POS use his screen while selling products or billing,customer 
 // Step7
 {
     label: ' STEP7 : Reports',
-    description: 'View analytic reports for your these.these reportshelp you get overall information about the peformance of your build',
+    description: "View analytic reports for your these.these reportshelp you get overall information about the peformance of your build",
 }
 ];
 export default
@@ -72,13 +71,14 @@ export default
     return(
       
       
-      <Grid 
-          >
+      <Grid>
+          
              { /*Call-Label*/}
-            <Typography>{steps[activeStep].label}</Typography>
+             
+            <Typography sx={Application.label}>{steps[activeStep].label}</Typography>
 
             { /*Call-Description*/}
-            {steps[activeStep].description}
+            <Typography sx={Application.desc}>{steps[activeStep].description}</Typography>
           
           <Grid>
     

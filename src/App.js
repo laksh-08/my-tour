@@ -1,11 +1,13 @@
 import React from 'react'
 //Import Tour File
-import Tour from './Components/Tour';
+
+import Step from './Components/Step'
 const App = () => {
   return (
     <div>
+      <Step />
       { /* Render TextMobileStepper */}
-     <Tour />
+   
    </div>
   )
 }
