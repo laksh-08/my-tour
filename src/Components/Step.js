@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { MenuItem,Menu} from '@mui/material';
-
+import {Application} from './style';
 import Button from '@mui/material/Button';
 import TextMobileStepper from './Tour';
 
@@ -17,7 +17,7 @@ const handleClose=()=>{
 }
 return(
 <div>
-<Button variant="contained"  color="success" onClick={handleClick}> Application-Tour </Button>
+<Button variant="contained"  color="success" onClick={handleClick} sx={Application.box}> Application-Tour </Button>
     <Menu anchor={anchor}
     open={open}
     onClose={handleClose}>
